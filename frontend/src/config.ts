@@ -1,0 +1,1 @@
+export const BACKEND_URL = "https://backend.ktandon2004.workers.dev"
