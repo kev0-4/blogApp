@@ -128,6 +128,7 @@ blogRouter.get("/bulk/all", async (c) => {
       author: {
         select: { name: true },
       },
+      
     },
   });
   return c.json({
