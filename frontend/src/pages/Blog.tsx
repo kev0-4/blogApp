@@ -22,6 +22,15 @@ export const Blog = () => {
     }
     return <div>
      
-        <FullBlog  blog={blog}/>
+        <FullBlog  blog={blog || {
+    content: "string",
+    title: "string",
+    id: 0,
+    author: {
+      name: "string",
+    },
+    publishedDate: "string"
+  } }/>
     </div>
 }
+

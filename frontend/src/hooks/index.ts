@@ -14,6 +14,7 @@ export interface BlogTypes {
 
 export const useBlog = ({ id }: { id: string }) => {
     const [loading, setLoading] = useState(true);
+    //@ts-nocheck
     const [blog, setBlog] = useState<BlogTypes>();
 
     useEffect(() => {
@@ -36,7 +37,7 @@ export const useBlog = ({ id }: { id: string }) => {
 
 export const useBlogs = () => {
   const [loading, setLoading] = useState(true);
-
+  //@ts-ignore
   const [blogs, setBlogs] = useState<BlogTypes>([]);
 
   useEffect(() => {
